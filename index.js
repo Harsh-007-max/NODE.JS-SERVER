@@ -6,6 +6,7 @@ const router = require("./routes/EmployeeRoutes");
 require("dotenv").config();
 const PORT = 8000;
 const DB_Path =process.env.DB_PATH;
+
 //connecting database
 ConnectDB(DB_Path).then(
   console.log(`Successfully Connected to MongoDB Server`),
